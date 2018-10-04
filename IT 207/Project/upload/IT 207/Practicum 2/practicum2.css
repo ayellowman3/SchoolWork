@@ -1,0 +1,12 @@
+#container{
+	position: absolute;
+	margin-left: 189px;
+	top: 97px;
+	width: 770px;
+	min-height: 900px;
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom:86px;
+	z-index: -1;
+	background: #EDC9AF;
+}

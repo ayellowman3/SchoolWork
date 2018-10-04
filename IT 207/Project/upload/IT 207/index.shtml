@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN"> -->
+<!--#include virtual="sidebar.inc"-->
+<!--#include virtual="header.php"-->
+<!--#include virtual="footer.inc"-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>George's Website</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<div id="picture"><img src="http://helios.ite.gmu.edu/~ghuang3/IT%20207/selfie.JPG" width="350px" height="350px" alt="selfie of me" /></div>
+
+<div id="summary">
+<h1>Summary</h1>
+<h3>Personal</h3>
+<p>My name is George and I was born in Maryland and raised in Fairfax, Virginia. My father is from Fuzhou, China and my mother is from Taipei, Taiwan. They moved to Washington DC in the early 1980's.</p>
+<h3>Academic</h3>
+<p>I am currently a senior majoring in Information Technology with a concentration in database and programming at George Mason University. For high school, I attended Westfield and I graduated back in 2012.</p>
+</div>
+
+<div id="summary2">
+<h2>Professional &amp; Personal Details</h2>
+<p>I am currently 22 years old and I have many hobbies which include, travelling, cooking, lifting weights, playing sports, video editing, gaming, etc. The hobby that defines who I am today would be sports. I have played many sports starting from a young age through college, such as tennis, football, basketball, swimming, running, and golf. The lessons and skills from playing sports can be transitioned off the field into every aspect of my life. Learning how to play a sport is the same as doing anything else in life. Some things are easier to learn than others and some take more time and practice but in the end, it's all about reaching your goals to be successful. I felt the same way about programming because when I first started to learn programming, I had a difficult time understanding what coding is, but I kept pursuing it and I now enjoy programming. After college, I hope to find a career in programming, mobile development, or an information technology consultant.</p>
+</div>
+
+</body>
+</html>

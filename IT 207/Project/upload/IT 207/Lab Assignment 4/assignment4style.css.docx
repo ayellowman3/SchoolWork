@@ -1,0 +1,40 @@
+#container{
+	position: absolute;
+	margin-left: 189px;
+	top: 97px;
+	width: 770px;
+	min-height: 900px;
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom:86px;
+	z-index: -1;
+	background: #EDC9AF;
+}
+
+#container #post{
+	margin-left: 20px;
+}
+
+#container #box{
+	height: 50px;
+}
+#container #box #index{
+	text-align: center;
+	width: 40px;
+	float: left;
+}
+
+#container #box #info{
+	text-align: left;
+	width: auto;
+	margin-left: 100px;
+	float: left;
+}
+
+#container #content2{
+	margin-left: 20px;
+}
+
+#container h1{
+	margin-left: 20px;
+}

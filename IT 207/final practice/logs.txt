@@ -1,0 +1,13 @@
+Cincinnati,Miami,20,22
+Atlanta,Carolina,10,34
+San Diego,Washington,24,30
+New Orleans,NY Jets,20,26
+Tennessee,St. Louis,28,21
+Minnesota,Dallas,23,27
+Kansas City,Buffalo,23,13
+Tampa Bay,Seattle,24,27
+Philadelphia,Oakland,49,20
+Pittsburgh,New England,31,55
+Baltimore,Cleveland,18,24
+Indianapolis,Houston,27,24
+Chicago,Green Bay,27,20

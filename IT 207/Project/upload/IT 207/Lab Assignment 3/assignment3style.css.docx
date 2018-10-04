@@ -1,0 +1,36 @@
+h1{
+	padding: 10px;
+}
+
+h3{
+	padding: 10px;
+}
+
+#container{
+	position: absolute;
+	margin-left: 189px;
+	top: 97px;
+	bottom: 73px;
+	width: 770px;
+	height: 100%;
+	border-style: solid;
+	border-width: 1px;
+	z-index: -1;
+	background: #EDC9AF;
+}
+
+#container #Directory{
+	padding: 10px;
+}
+
+#container #content2{
+	padding: 10px;
+}
+
+form{
+	padding: 10px;
+}
+
+p{
+	padding: 10px;
+}
