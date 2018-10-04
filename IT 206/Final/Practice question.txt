@@ -1,0 +1,107 @@
+1
+
+Imagine you have created a method called validateZipCode that returns a Boolean whether or not a valid zip code was provided. Write code that will invoke (call) the method, sending user input as an argument. The user must be continuously prompted to enter a different value and informed of an error until the method returns true
+
+boolean valid = false;
+String zipCode;
+do{
+	zipCode = JOptionPane.showInputDialog("Enter zipcode");
+	valid = validateZipCode(zipCode);
+	if(!valid){JOptionPane.showMessageDialog(null, "Error Message");}
+}while(!valid);
+
+2
+
+Assume you have created an inheritance hierarchy with classes of Employee, Engineer, and Architect. Each class has a hello() method. Based on the implementation code provided below, could the following code be added to the end of the main method? Why or why not? Explain your answer using course terminology.
+
+JOptionPane.showMessageDialog(null, getHelloMessage(emp1));
+
+// Implementation Class
+import javax.swing.JOptionPane;
+public class Question {
+	public static void main(String[] args) {
+	Employee emp1 = new Employee();
+	Engineer eng1 = new Engineer();
+	Architect arc1 = new Architect();
+
+	//Code would be added here
+	}
+
+	public static String getHelloMessage(Employee e) {
+	return e.hello();
+	}
+}
+
+
+Yes it can. Since we are able to make an employee object by its self, we can assume that Employee is not an interface or abstract class. Since each class has a hello() method, you can call it using the added line assuming that the method is a public method. It also requires that the hello() method returns a string from the Employee class for it to work. 
+
+
+3
+
+Draw a UML diagram for a class hierarchy that contains data definition classes and the relationships between the following data definition classes: Fruit, Banana, Apple. Assume it is impossible to create a Fruit object. Then, briefly justify your design.
+
+
+4
+
+Consider the following Java interface. Based on this interface, identify one problem with the
+interface and then identify how it should be fixed.
+public interface Sizable {
+	double size;
+	double getSize();
+}
+
+size in Sizable is implemented as a variable but an interface doesn't allow instance variables to be declared. To fix it would be to assign size as a constant.
+
+
+5
+
+Using course terminology, explain the difference between inheritance and composition. When would a programmer use inheritance vs. composition. In your answer provide an example of each.
+
+The difference between inheritance and composition is that the child in inheritance receives characteristic from the parent but in composition, it exist in the object but doesn't receive characteristic from the parent
+One way to determine between inheritance and composition relationship is to think of how the objects interact. If the child object is able to stand alone and not dependent of the parent, then it has an inheritance relationship. If the child is dependent on the parent, then it has a composition reationship.
+inheritance example apple is a type of fruit. 
+composition example a house has a kitchen
+
+
+6
+
+Consider the Java code identified below. Does this code use a checked or unchecked exception?
+How do you know? In your answer explain the difference between a checked and unchecked
+exception.
+public static void sampleMethod() throws IOException {
+	// Other Method Code
+
+	if (error) {
+	throw new IOException("TEST");
+	}
+}
+
+This code uses a checked excpetion since it uses an IOExecption which is thrown. 
+Checked exception are checked by the compiler and if there are errors like invalid variable types, then there will be compiler error. unchecked excepts are overlooked by the compiler and is based on the codes execution. It is caused by logic error in the program which isn't found by the compiler. It's found during execution. If unchecked errors are found,then it ends the program.
+
+
+7
+
+Consider the following Java code representing a partially completed Actor data definition class. Write an accessor method for the instance variable, movieNames.
+public class Actor {
+	private String name;
+	private int age;
+	private String[] movieNames;
+	private static int numActors;
+
+	public String[] getMovieNames(){
+		return movieNames;
+	}
+}
+
+
+8
+
+Consider the block of Java code identified below meant to read an input file. What code should be inserted in between the ** ** symbols? Explain why this code should be inserted.
+
+public static void main(String[] args) **____________________** {
+	Scanner in = new Scanner(new FileInputStream((new
+	File(aFile.getSelectedFile().getPath()))));
+	// remaining method code
+}
+
