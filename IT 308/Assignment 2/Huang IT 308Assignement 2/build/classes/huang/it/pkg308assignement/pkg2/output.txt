@@ -1,0 +1,8 @@
+Shipping Address
+Address{fName=1, lName=1, street=1, city=1, state=1, zip=1, country=1}
+
+Billing Address
+Address{fName=1, lName=1, street=1, city=1, state=1, zip=1, country=1}
+
+Order Details
+Billing{type=credit, accountNum=, qty=13, totalCost=560.45, comments=1	1	1	1				}
