@@ -1,0 +1,5 @@
+!!!Important read this for testing
+
+you can use TestQueue or test stack but using Tester.java is better. I modified it to test properly.
+
+For validation of equation, use Application.java to test that.
