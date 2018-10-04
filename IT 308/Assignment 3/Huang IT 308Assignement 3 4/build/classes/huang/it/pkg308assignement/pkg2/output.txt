@@ -1,0 +1,45 @@
+Shipping Address
+Address{fName=George, lName=Huang, street=13259 Middleton Farm Ln, city=Herndon, state=MD, stateIndex=1, zip=20171, country=USA}
+
+Billing Address
+Address{fName=George, lName=Huang, street=13259 Middleton Farm Ln, city=Herndon, state=MD, stateIndex=1, zip=20171, country=USA}
+
+Order Details
+Billing{type=debit, accountNum=1234567890123456, qty=2, totalCost=101.90, comments=hi, same=false, product=Calculus 101, productIndex=3}
+
+Shipping Address
+Address{fName=George, lName=Huang, street=13259 Middleton Farm Ln, city=Herndon, state=MD, stateIndex=1, zip=20171, country=Herndon}
+
+Billing Address
+Address{fName=George, lName=Huang, street=13259 Middleton Farm Ln, city=Herndon, state=MD, stateIndex=1, zip=20171, country=USA}
+
+Order Details
+Billing{type=debit, accountNum=1234567890123456, qty=2, totalCost=101.90, comments=hi, same=false, product=null, productIndex=-1}
+
+Shipping Address
+Address{fName=George, lName=Huang, street=13259 Middleton Farm Ln, city=Herndon, state=DE, stateIndex=2, zip=20171, country=usa}
+
+Billing Address
+Address{fName=George, lName=Huang, street=13259 Middleton Farm Ln, city=Herndon, state=DE, stateIndex=2, zip=20171, country=usa}
+
+Order Details
+Billing{type=PayPal, accountNum=1234, qty=1, totalCost=50.95, comments=, same=false, product=Biology 101, productIndex=2}
+
+Shipping Address
+Address{fName=George, lName=Huang, street=12345, city=1, state=DE, stateIndex=2, zip=22222, country=1211121}
+
+Billing Address
+Address{fName=George, lName=Huang, street=12345, city=1, state=DE, stateIndex=2, zip=22222, country=1211121}
+
+Order Details
+Billing{type=PayPal, accountNum=1234, qty=1, totalCost=50.95, comments=, same=false, product=Biology 101, productIndex=2}
+
+Shipping Address
+Address{fName=George, lName=Huang, street=12345, city=2, state=DE, stateIndex=2, zip=22222, country=1}
+
+Billing Address
+Address{fName=George, lName=Huang, street=12345, city=2, state=DE, stateIndex=2, zip=22222, country=1}
+
+Order Details
+Billing{type=PayPal, accountNum=1234, qty=1, totalCost=50.95, comments=, same=false, product=Biology 101, productIndex=2}
+
