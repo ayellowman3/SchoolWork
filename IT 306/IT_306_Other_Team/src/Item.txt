@@ -1,0 +1,30 @@
+Clothes : 10.00 : 50 : 20 : Adidas : White : 15 : 15 : 10 : 10
+Clothes : 10.00 : 45 : 18 : Adidas : Black : 10 : 15 : 10 : 10
+Clothes : 10.00 : 51 : 16 : Adidas : Red : 21 : 10 : 10 : 10
+Clothes : 10.00 : 52 : 14 : Adidas : Blue : 22 : 10 : 10 : 10
+Clothes : 15.00 : 53 : 12 : Under Armour : Gray : 23 : 10 : 10 : 10
+Clothes : 15.00 : 54 : 13 : Under Armour : Black : 24 : 10 : 10 : 10
+Clothes : 15.00 : 55 : 15 : Under Armour : Red : 25 : 10 : 10 : 10
+Clothes : 15.00 : 56 : 16 : Nike : White : 26 : 10 : 10 : 10
+Clothes : 20.00 : 57 : 17 : Nike : Black : 27 : 10 : 10 : 10
+Clothes : 20.00 : 58 : 19 : Nike : Navy : 28 : 10 : 10 : 10
+Books : 19.95 : 20 : 10 : Mummy : R.L.Stein : horror
+Books : 18.95 : 21 : 9 : 1984 : George Orwell : sci-fi
+Books : 17.95 : 22 : 8 : A Brief History of Time : Stephen Hawking : history
+Books : 16.95 : 23 : 8 : Alice's Adventure in Wonderland : Lewis Caroll : fantasy
+Books : 15.95 : 24 : 7 : Catch-22 : Joseph Heller : fiction
+Books : 14.95 : 25 : 6 : Harry Potter : J.K.Rowling : fantasy
+Books : 13.95 : 26 : 5 : The Art of War : Sun Zhu : non-fiction
+Books : 12.95 : 27 : 5 : Money Ball : Michael Lewis : sports
+Books : 11.95 : 28 : 4 : Malcome X : Malcome X : biography
+Books : 10.95 : 29 : 3 : The Fault in our Stars : John Green : fiction
+Toys : 4.99 : 100 : 20 : Pokemon : 10 : 20
+Toys : 5.99 : 95 : 22 : Lego : 3 : 99
+Toys : 6.99 : 90 : 24 : Barbie : 4 : 97
+Toys : 7.99 : 85 : 26 : Monopoly : 5 : 95
+Toys : 8.99 : 80 : 28 : Checkers : 6 : 93
+Toys : 9.99 : 75 : 30 : Nerf : 8 : 91
+Toys : 10.99 : 70 : 32 : Sonic : 3 : 89
+Toys : 11.99 : 65 : 34 : My Little Pony : 3 : 87
+Toys : 12.99 : 60 : 36 : Zhu Zhu Pets : 4 : 85
+Toys : 13.99 : 55 : 38 : Olaf : 2 : 83

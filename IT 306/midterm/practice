@@ -1,0 +1,38 @@
+public static LinkedList readRecords (String filepath) {
+	BufferedReader br = null
+	LinkedList record = new LinkedList()
+	try{
+		br = BufferedReader(new FileReader(filepath));
+		String line = "";
+		while(line = br.readline() != null){
+			String id = substring(0, line.IndexOf('@'));
+			Double grade = d.pd(substring(linie.IndexOf(',;)+1));
+			Student s = new Student(id, grade);
+			record.add(s);
+		}
+		br.close();
+		return record;
+	}catch(FileNotFoundException e){
+		e.printStackTrace();
+	}
+
+
+	public static LinkedList readRecords (String filepath) {
+  BufferedReader br = null;
+  LinkedList records = new LinkedList();
+  try{
+     br = new BufferedReader (new FileReader(filepath));
+     String line = "";  
+     while((line=br.readLine())!=null) {
+        String id= line.substring(0,line.indexOf('@'));
+        double grade = Double.parseDouble(line.substring(line.indexOf(',')));
+        Student s = new Student(id, grade); 
+        records.add(s);  
+     }
+     br.close();
+     return records;
+
+  }catch(FileNotFoundException e) {
+     e.printStackTrace(); 
+  }
+}

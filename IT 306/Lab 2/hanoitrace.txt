@@ -1,0 +1,158 @@
+Lab 2
+
+George Huang
+Ryan Evans
+Steven Chen
+
+indention represents recursion. The same column from a-d is one recursion run
+
+a hanoi(4, a, b, c)
+	a hanoi(3, a, c, b)
+		a hanoi(2, a, b, c)
+			a hanoi(1, a, c, b)
+			b 	move from stack 1 to stack 2
+				stack1[4,3,2,1]
+				stack2[]
+				stack3[]
+			c
+				stack1[4,3,2]
+				stack2[1]
+				stack3[]
+			d
+		b		move from stack 1 to stack 3
+				stack1[4,3,2]
+				stack2[1]
+				stack3[]
+		c
+				stack1[4,3]
+				stack2[1]
+				stack3[2]
+			a hanoi(1, b, a, c)
+			b 	move from stack 2 to stack 3
+				stack1[4,3]
+				stack2[1]
+				stack3[2]
+			c
+				stack1[4,3]
+				stack2[]
+				stack3[2,1]
+			d
+		d
+	b 			move from stack 1 to stack 2
+				stack1[4,3]
+				stack2[]
+				stack3[2,1]
+	c
+				stack1[4]
+				stack2[3]
+				stack3[2,1]
+		a hanoi(2, c, a, b)
+			a hanoi(1, c, b, a)
+			b	move from stack 3 to stack 1
+				stack1[4]
+				stack2[3]
+				stack3[2,1]
+			c
+				stack1[4,1]
+				stack2[3]
+				stack3[2]
+			d
+		b		move from stack 3 to stack 2
+				stack1[4,1]
+				stack2[3]
+				stack3[2]
+		c
+				stack1[4,1]
+				stack2[3,2]
+				stack3[]
+			a hanoi(1, a, c, b)
+			b	move from stack 1 to stack 2
+				stack1[4,1]
+				stack2[3,2]
+				stack3[]
+			c
+				stack1[4]
+				stack2[3,2,1]
+				stack3[]
+			d
+		d
+	d
+b 				move from stack 1 to stack 3
+				stack1[4]
+				stack2[3,2,1]
+				stack3[]
+c
+				stack1[]
+				stack2[3,2,1]
+				stack3[4]
+	a hanoi(3, b, a, c)
+		a hanoi(2, b, c, a)
+			a hanoi(1, b, a, c)
+			b	move from stack 2 to stack 3
+				stack1[]
+				stack2[3,2,1]
+				stack3[4]
+			c
+				stack1[]
+				stack2[3,2]
+				stack3[4,1]
+			d
+		b		move from stack 2 to stack 1
+				stack1[]
+				stack2[3,2]
+				stack3[4,1]
+		c
+				stack1[2]
+				stack2[3]
+				stack3[4,1]
+			a hanoi(1, c, b, a)
+			b	move from stack 3 to stack 1
+				stack1[2]
+				stack2[3]
+				stack3[4,1]
+			c
+				stack1[2,1]
+				stack2[3]
+				stack3[4]
+			d
+		d
+	b			move from stack 2 to stack 3
+				stack1[2,1]
+				stack2[3]
+				stack3[4]
+	c
+				stack1[2,1]
+				stack2[]
+				stack3[4,3]
+		a hanoi(2, a, b, c)
+			a hanoi(1, a, c, b)
+			b	move from stack 1 to stack 2
+				stack1[2,1]
+				stack2[]
+				stack3[4,3]
+			c
+				stack1[2]
+				stack2[1]
+				stack3[4,3]
+			d
+		b		move from stack 1 to stack 3
+				stack1[2]
+				stack2[1]
+				stack3[4,3]
+		c
+				stack1[]
+				stack2[1]
+				stack3[4,3,2]
+			a hanoi(1, b, a, c)
+			b	move from stack 2 to stack 1
+				stack1[]
+				stack2[1]
+				stack3[4,3,2]
+			c
+				stack1[]
+				stack2[]
+				stack3[4,3,2,1]
+			d
+		d
+	d
+d

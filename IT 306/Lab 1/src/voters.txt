@@ -1,0 +1,10 @@
+female, 2
+female, 2
+male , 3
+male , 5
+female, 5
+male , 5
+female , 5
+male, 2
+male, 4
+female, 5

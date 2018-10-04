@@ -1,0 +1,592 @@
+Midterm Study guide IT 306
+Fall 2016
+
+Question 1
+
+public class convertDec2Hex{
+	public static void main(String[] args){
+		JOptionPane.showMessageDialog(convert(1000, ""));
+	}
+
+	public static String convert(int n, String r){
+
+		if(n == 0){
+			return r;
+		}
+		
+		string[] hex = {'0', '1' , '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'}; 
+
+		String s = hex[n%16] + r;
+
+		String ans = convert(n/16, s);
+
+		return ans;
+	}
+}
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 a
+11 b
+12 c
+13 d
+14 e
+15 f
+
+2-----------------------------------------------------------------------------------------------
+
+public class Holder{
+	private int value;
+	public void Holder(int initialValue){	//remove void from constructor
+		initialValue = value;				//value = initialValue
+	}
+	public int getValue(){
+		return value;
+	}
+	public void addToValue(int toAdd){
+		int value += toAdd;					//remove int
+	}
+}
+
+
+3-----------------------------------------------------------------------------------------------
+
+?
+
+
+
+4-----------------------------------------------------------------------------------------------
+
+aggregation
+
+
+5-----------------------------------------------------------------------------------------------
+
+public class Vehicle implements Colorable{}
+
+6-----------------------------------------------------------------------------------------------
+
+IndexOutOfBoundsException
+
+7-----------------------------------------------------------------------------------------------
+
+yes 
+
+arraylist
+list
+
+
+8-----------------------------------------------------------------------------------------------
+
+True
+
+9-----------------------------------------------------------------------------------------------
+
+this(0);
+
+
+10----------------------------------------------------------------------------------------------
+
+the variable already exist in the parent type so instead of having it in the child class, call the super method with the parameter
+
+
+11----------------------------------------------------------------------------------------------
+
+O(n)
+n^2
+o(1)
+O(log2n)
+
+
+12----------------------------------------------------------------------------------------------
+
+n^2
+
+13----------------------------------------------------------------------------------------------
+
+package Lecture6_MidtermStudy;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.*;
+
+public class HouseApplication {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		readAndSortOnPrice("./src/Lecture6_MidtermStudy/data.txt");
+	}
+	
+	
+	public static House[] readAndSortOnPrice(String filepath) 
+	{ 
+		House[] houses = new House[100];
+		Scanner reader = null; 
+		try{
+			reader = new Scanner(new FileInputStream(filepath)); 
+			while(reader.hasNextLine()){
+				String line = reader.nextLine(); 
+				String address = line.substring(0, line.indexOf(";"));
+				double price = Double.parseDouble(line.substring(line.indexOf(";") +3,
+						line.indexOf(";", line.indexOf(";")+1)));
+				String status = line.substring(line.lastIndexOf(";")); 
+				House house = new House(address, price, status); 
+				houses[House.getTotal()-1] = house;
+			}
+			
+			houses = insertionSort(houses);
+			
+			return houses;
+		}catch(FileNotFoundException e){
+			e.printStackTrace(); 
+		}catch(IOException e) {
+			e.printStackTrace(); 
+		}
+		return null;
+	}
+
+	
+	public static House[] insertionSort(House[] houses){
+		int sorted=1; //assume the first element is sorted
+		while(sorted<House.getTotal()){
+			//start from the second element
+			int s = sorted-1; //this is the rear index to sorted list
+			int  u = s+1; //beg index to unsorted list
+			
+			if (houses[u].getPrice() < houses[s].getPrice()){
+				while(s>=0 && u <= House.getTotal() &&
+						houses[u].getPrice() < houses[s].getPrice()){
+					House temp = houses[u]; 
+					houses[u] = houses[s];
+					houses[s] = temp;
+					u--; 
+					s--;
+				}
+				sorted++;	
+			}
+			else {
+				u++;
+				sorted++;
+			}
+		}
+		return houses;
+	}
+}
+
+package Lecture6_MidtermStudy;
+
+public class House{
+private String address;
+private double price;
+private String status;
+private static int total; 
+
+	public House(String ad , double p , String s) {
+		address = ad; price = p; status = s;
+		total++;
+	}
+	public double getPrice() { return price; }
+	public String getAddress() {return address; }
+	public String getStatus() {return status; }
+	public static int getTotal(){ return total;}
+}
+
+
+
+Fall 2014
+
+1------------------------------------------------------------------------
+
+2016 1
+
+2------------------------------------------------------------------------
+
+2016 2
+
+3------------------------------------------------------------------------
+
+2016 13
+4------------------------------------------------------------------------
+
+?
+5------------------------------------------------------------------------
+
+aggregation
+
+6------------------------------------------------------------------------
+
+2016 5
+
+7------------------------------------------------------------------------
+
+indexoutofboundsexception
+
+8------------------------------------------------------------------------
+
+yes, arraylist and list
+
+9------------------------------------------------------------------------
+
+false
+
+10-----------------------------------------------------------------------
+
+this(0);
+
+11-----------------------------------------------------------------------
+
+n^2
+
+12-----------------------------------------------------------------------
+
+
+
+13-----------------------------------------------------------------------
+
+b
+
+14-----------------------------------------------------------------------
+
+
+15-----------------------------------------------------------------------
+
+
+16-----------------------------------------------------------------------
+
+
+
+
+
+
+Practice Exam 1
+
+1------------------------------------------------------------------------
+
+public static LinkedList readRecords (String filepath) {
+  BufferedReader br = null;
+  LinkedList records = new LinkedList();
+  try{
+     br = new BufferedReader (new FileReader(filepath));
+     String line = "";  
+     while((line=br.readLine())!=null) {
+        String id= line.substring(0,line.indexOf('@'));
+        double grade = Double.parseDouble(line.substring(line.indexOf(',')));
+        Student s = new Student(id, grade); 
+        records.add(s);  
+     }
+     br.close();
+     return records;
+
+  }catch(FileNotFoundException e) {
+     e.printStackTrace(); 
+  }
+}
+
+
+
+public static void printMax (LinkedList records){
+     if (records.isEmpty()) JOP.showMessageDialoge("The list is empty");      Student max = records.getHead(); 
+     if(records.size()==1) JOP.showMessageDialog(max); 
+     
+     Node cursor = max.next();
+         while(cursor!=null) {
+            if(cursor.getData().getGrade() > max.getGrade() )
+                  max=cursor; 
+            cursor = cursor.next();
+         }
+     JOP.showMessageDialog(max);                
+ }
+
+
+
+2------------------------------------------------------------------------
+
+public String convertDec2Bin (int decimal) {
+
+     //TODO: convert a decimal integer into a binary representation. You can assume that the sequence of binary numbers is presented in a string.
+    String s;
+    if(decimal%2 == 1){
+    	s = "1";
+    }else{
+    	s = "0";
+    }
+    if(decimal / 2 > 0){
+    	s = convertDec2Bin(decimal / 2) + s;
+    }
+
+    return s;
+}
+
+3------------------------------------------------------------------------
+
+public class Node{
+
+      private int value;
+
+      private Node next;
+
+      public Node (int val , Node next) { this.value = val;  this.next = next; }
+
+      public int getVal() { return this.value; }
+
+      public void setVal(int val) { this.value= val; }
+
+      public void setNext(Node next) { this.next = next; }
+
+      public Node getNext() { return next; }
+
+      public boolean hasNext() {  return (next==null ? true : false) ; }
+
+}
+
+Implement class LinkedList.java: implement the required class instance variables to implement the following methods:
+
+1- "add" (add to the end of the linkedlist) ,and
+
+2- "remove" (remove from the beginning of the linkedlist and return). 
+
+public class add(Node n){
+	Node node = LinkedList.getHead();
+	while(!node.hasNext()){
+		node = node.getNext();
+	}
+	node.setNext(n);
+}
+
+public class remove(){
+	
+	Node head = linkedlist.getHead();
+	Node next = head.getNext();
+
+	linkedlist.setHead(next);
+
+	System.out.println(head);
+}
+
+
+4------------------------------------------------------------------------
+
+public interface Vehicle{}
+ 
+
+public class Car implements Vehicle{
+      public void moveOnFourWheels() {…}
+}
+
+public class Motorcycle implements Vehicle{
+      public void moveOnTwoWheels() {…}
+}
+ 
+
+public class Application{
+ 
+      public static void main(String[] args) {
+            Vehicle[] vs= new Vehicle[3] ;
+            Vehicle v1 = new Vehicle(); //interface can not be instanticated
+            Vehicle v2 = new Car(); 
+            Motorcycle v3 = new Motorcycle(); 
+            vs[0]  =v1; //vehicle can not be instanticated
+            vs[1] = v2;
+            vs[2] = v3;
+            for(Vehicle v: vs) { 
+            	if(v instance of Car){ //put this
+                  v.moveOnFourWheels();
+                }
+                else if(v instance of motorcycte){//put this
+                  v.moveOnTwoWheels();
+                } 
+            }
+}
+}
+
+5------------------------------------------------------------------------
+
+EZ
+
+6------------------------------------------------------------------------
+public class Person{
+
+private String firstName;
+
+private String lastName;
+
+private int id;
+
+private static Random generator = new Random();
+
+public Person() {
+
+id = generator.nextInt(40);
+
+firstName = "unknown";
+
+lastName = "unknown";
+
+}
+
+public Person(String firstName , String lastName){
+
+this();
+
+firstName= firstName;
+
+lastName = lastName;
+
+}
+
+ 
+
+public String toString(){
+
+return String.format("%s , %s " , firstName, lastName);
+
+}
+
+} 
+
+ 
+
+public class Application{
+
+public static void main(String[] args){
+
+Person p = new Person("Tom" , "Jones");
+
+System.out.print(p);
+
+}
+
+}
+
+unknown unknown
+
+
+
+
+7------------------------------------------------------------------------
+
+abstract class, abstract
+
+8------------------------------------------------------------------------
+
+public class Company{
+
+      private Employee[] employees;
+
+      public static final int MAX =100;
+
+      public Company(){
+
+            employees = new Employee[MAX] ;
+
+      }
+
+ 
+
+      public boolean addEmployee(Employee emp) {
+
+            if ( Employee.getTotal()      >= MAX ) return false;
+
+            else{
+
+                  employees[Employee.getTotal() ] = emp;
+
+                  return true;
+
+            }
+
+      }
+
+}
+
+ 
+
+public class Employee{
+
+      private String id;
+
+      private static int total;
+
+      public Employee(String id) {this.id = id;   total++; }
+
+      public static int getTotal() { return total; }
+
+}
+
+i think aggregation
+
+9------------------------------------------------------------------------
+
+public class Book {
+
+            private String title;
+
+            private double price;
+
+            public Book(String s, double p) { title = s; price =p; }
+
+}
+
+ 
+
+public class Application{
+
+            public static void main(String[] args) {
+
+                        Book b1 = new Book(“Tom Sawyer” ,80);
+
+                        Book b2 = new Book(“Tom Sawyer”,80);
+
+                        System.out.print(b1 == b2) ;
+
+            }
+
+}
+
+False
+
+10-----------------------------------------------------------------------
+
+ez
+
+11-----------------------------------------------------------------------
+
+
+
+12-----------------------------------------------------------------------
+two stacks?
+
+
+13-----------------------------------------------------------------------
+
+multiple level inheritance true
+
+
+14-----------------------------------------------------------------------
+
+mergesort is fast
+
+15-----------------------------------------------------------------------
+
+O(n) for bucket sort
+
+16-----------------------------------------------------------------------
+
+binary search > mergesort
+
+17-----------------------------------------------------------------------
+
+
+
