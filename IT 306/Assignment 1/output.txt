@@ -1,0 +1,56 @@
+
+Number of items: 4
+
+
+Total cost: 1331
+
+
+Total tax: 87
+
+
+Cost + Tax: 1418
+
+
+     M & M Dessert Shoppe
+     --------------------
+
+2.25 lbs. @ 3.99 /lb.
+Peanut Butter Fudge        8.98
+Vanilla Ice Cream          1.05
+Hot Fudge Sundae with
+Choc. Chip Ice Cream       1.95
+4 @ 3.99 /dz.
+Oatmeal Raisin Cookies     1.33
+
+Tax                         .87
+Total Cost                14.18
+
+Number of items: 6
+
+
+Total cost: 1192
+
+
+Total tax: 77
+
+
+Cost + Tax: 1269
+
+
+     M & M Dessert Shoppe
+     --------------------
+
+Strawberry Ice Cream       1.45
+Caramel Sundae with
+Vanilla Ice Cream          1.55
+1.33 lbs. @ .89 /lb.
+Gummy Worms                1.18
+4 @ 3.99 /dz.
+Chocolate Chip Cookies     1.33
+1.50 lbs. @ 2.09 /lb.
+Salt Water Taffy           3.14
+3.00 lbs. @ 1.09 /lb.
+Candy Corn                 3.27
+
+Tax                         .77
+Total Cost                12.69

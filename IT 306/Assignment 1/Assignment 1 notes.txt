@@ -1,0 +1,29 @@
+Assignment 1 notes
+
+Don't change
+DessertShoppe and DessertItem
+
+Candy
+weight as price per pound
+weight
+price
+
+Cookie
+Price per dozen
+number of cookies
+
+IceCream
+cost
+
+Sundae
+cost of IceCream
+Plus cost of topping
+
+Checkout
+enter dessert items
+clear cash register
+number of items
+total cost before tax
+total tax
+String representing a receipt
+array to store dessertitems
